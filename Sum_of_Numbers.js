@@ -15,8 +15,8 @@
 // about how you get that number.
 
 //MY SOLUTION
-const getSum(a, b){
-    let max = Math.max(a, b)
-    min = Math.min(a, b)
-    return ((max - min + 1) * (min + max)) / 2
+const getSum = (a, b) => {
+    let max = Math.max(a, b);
+    min = Math.min(a, b);
+    return (max - min + 1) * (min + max)/ 2;
 }
