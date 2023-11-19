@@ -15,12 +15,13 @@
 function highAndLow(numbers) {
     let highestNumber;
     let lowestNumber;
-
+    let
+    //convert the string to an array
     let newArr = numbers.split(' ')
+    //parseInt() - to change numbers in string to 'actual' numbers?
     lowestNumber = Math.min(...newArr);
     highestNumber = Math.max(...newArr)
-    return (`${highestNumber} ${lowestNumber}`)
-
+    console.log(`${highestNumber} ${lowestNumber}`)
 }
 highAndLow("1 2 3 4 5 6 9")
 
