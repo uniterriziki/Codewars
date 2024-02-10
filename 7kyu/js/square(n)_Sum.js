@@ -18,7 +18,7 @@ squareSum([2, 2, 2])
 function squareSum2(numbers) {
     let sum = 0
     numbers.map((element) => sum += element ** 2)
-    console.log(sum)
+    return (sum)
 }
 squareSum2([2, 2, 2])
 
