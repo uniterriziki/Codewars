@@ -20,3 +20,9 @@ function shortcut(string) {
 }
 shortcut("Snake")
 
+
+//consider;
+//SOLUTION USING REPLACE
+//SOLUION USING FILTERS
+//SOLUTION USING REULAR EXPRESSIONS
+
