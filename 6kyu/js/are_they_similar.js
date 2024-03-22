@@ -22,18 +22,21 @@
 // b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361]
 // comp(a,b) returns false because in b 36100 is not the square of any number of a.
 
-console.l
+
 //SOLUTION
 function comp(array1, array2) {
-    //loop through array 1
-    let ans
-    for (let i = 0; i < array2.length; i++) {
-        if (!array2.includes((array1[i]) ** 2)) {
-            ans = false
-        } else {
-            ans = false
-        }        //compare if element1 is a square of element
+    if(!array1 || !array2){
+        return false
     }
-    console.log(ans)
+    array1.sort((a, b) => a - b);
+   array2.sort((a, b) => a - b);
+    //loop through array 1
+    
+    for (let i = 0; i < array1.length; i++) {
+        if (array2[i] !== array1[i] * array1[i]) {
+            return false
+        }       //compare if element1 is a square of element
+    }
+    return true
 }
 comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 36100, 25921, 361, 20736, 361])
